@@ -1,0 +1,195 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+nav {
+    background: #0a2a3a;
+    height: 70px;
+}
+.logo{
+    float: left;
+    width: 159px;
+    padding: 11px 0px 0px 48px;
+}
+nav ul{
+	float: right;
+	color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 175px;
+    position: relative;
+    background: #0a2a3a;
+    font-size: 20px;
+    height: 70px;
+    line-height: 70px;
+    z-index: 9999;
+    text-align: center;
+}
+
+nav ul li:hover{
+	background: #e6490d;
+	
+	
+}
+nav a{
+	text-decoration: none;
+	color: white;
+}
+nav ul ul{
+	display: none;
+}
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul ul{
+	position: absolute;
+	margin-left: 175px;
+	top: 0px;
+	z-index: 9999;
+}
+
+nav .ro{
+    float: right;
+    margin-top: 25px;
+    margin-right: 13px;
+}
+nav .to{
+    margin-left: 5px;
+}
+.image {
+    width: 100%;
+    height: 329px;
+    z-index: -1
+}
+#step-section {
+    width: 100%;
+    height: 420px;
+    background: linear-gradient(45deg, #dad9d9, transparent);
+    margin-top: -3px;
+}
+.bg{
+    position: absolute;
+    top: 70px;
+    background: #06060691;
+    width: 100%;
+    height: 329px;
+    text-align: center;
+   
+}
+h1 {
+    color: white;
+    padding: 111px 0px 24px 0px;
+}
+.btn1 {
+    cursor: pointer;
+    padding: 9px 43px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+ background: #e6490d;
+ color: white;
+ outline: none;
+}
+.btn2 {
+    cursor: pointer;
+    padding: 9px 43px;
+    border-radius: 2px;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    outline: none;
+}
+.btn2:hover{
+	background: #e6490d;
+	color: white;
+}
+ 
+
+
+.process {
+    position: absolute;
+    left: 34%;
+    margin-top: 33px;
+}
+
+.registration-bar {
+    background: white;
+    width: 80%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 5px #e6e6e6;
+}
+.rg-h {
+    padding: 5px;
+}
+.card {
+    width: 74%;
+    padding: 9px 0px 12px 8px;
+    margin-bottom: 9px;
+}
+
+.btn4{
+    padding: 11px 34px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2pc;
+    background: #27ae60;
+    color: white;
+    outline: none;
+}
+
+p {
+    padding-bottom: 19px;
+}
+
+.progressbar {
+   position: relative;
+   counter-reset: step;
+    margin-bottom: 25px;
+    padding-bottom: 53px;
+    width: 144%;
+}
+.progressbar  li{
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	width: 20%;
+	position: relative;
+}
+.progressbar  li::before {
+    content: counter(step);
+    counter-increment: step;
+    display: block;
+    
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: white;
+    margin: 0px auto 15px auto;
+}
+.progressbar li::after {
+    content: "";
+    background-color: #b9b9b9;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 11px;
+    z-index: -1;
+    left: -69px;
+}
+.progressbar  li:first-child::after{
+	content: none;
+}
+.progressbar li.active::before{
+    background: #27ae60;
+    color: white;
+
+}
+.progressbar li.active+li::after{
+    background: #27ae60;
+}
